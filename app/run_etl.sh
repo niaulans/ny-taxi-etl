@@ -1,26 +1,26 @@
 #!/bin/bash
 
-# Pastikan script error jika ada perintah yang gagal
+# Ensure the script exits if any command fails
 set -e
 
-# Path ke file daftar tabel dan URL
+# Path to the file containing table names and URLs
 FILE="table_urls.txt"
 
-# Debug: Tampilkan isi file sebelum loop
+# Debug: Display the file contents before looping
 echo "Reading table_urls.txt..."
 cat "$FILE"
 echo "------------------------------------"
 echo ""
 
-# Simpan waktu mulai total proses
+# Record the start time of the entire process
 START_TOTAL=$(date +%s)
 
-# Loop setiap baris dalam file
+# Loop through each line in the file
 while IFS=" " read -r TABLE_NAME URL || [[ -n "$TABLE_NAME" ]]
 do
     echo "Processing table: $TABLE_NAME"
 
-    # Simpan waktu mulai proses untuk tabel ini
+    # Record the start time for this table's process
     START_TIME=$(date +%s)
 
     docker run --rm -t \
@@ -35,7 +35,7 @@ do
             --table_name="$TABLE_NAME" \
             --url="$URL"
 
-    # Hitung durasi waktu untuk tabel ini
+    # Calculate the duration for this table's process
     END_TIME=$(date +%s)
     DURATION=$((END_TIME - START_TIME))
 
@@ -45,7 +45,7 @@ do
 
 done < "$FILE"
 
-# Hitung total durasi untuk semua tabel
+# Calculate the total duration for all tables
 END_TOTAL=$(date +%s)
 TOTAL_DURATION=$((END_TOTAL - START_TOTAL))
 
