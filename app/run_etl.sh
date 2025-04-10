@@ -29,7 +29,7 @@ do
         ny-taxi-etl:v01 \
             --user=admin \
             --password=admin123 \
-            --host=postgres_db \
+            --host=nyc_postgres \
             --port=5432 \
             --db=ny_taxi \
             --table_name="$TABLE_NAME" \
