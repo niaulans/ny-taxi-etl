@@ -58,4 +58,4 @@ _Green Taxi_
 ![Green Taxi](/assets/green.jpg)
 
 
-You can check the interactive version [here](https://app.powerbi.com/reportEmbed?reportId=f5c26d72-c8ec-4b39-aa5b-52bcb624d25b&autoAuth=true&ctid=1241de96-4dbf-4231-aa90-4d48af86085c){:target="_blank" rel="noopener"}
+You can check the interactive version [here](https://app.powerbi.com/reportEmbed?reportId=f5c26d72-c8ec-4b39-aa5b-52bcb624d25b&autoAuth=true&ctid=1241de96-4dbf-4231-aa90-4d48af86085c)
