@@ -45,7 +45,7 @@ bash run_etl.sh
 
 6. Connect Power BI to PosgreSQL
 
-The full step-by-step documentation can be found on my blog [here](https://niaulans.tech/posts/ETL-Pipeline-Project-NYC-Taxi-Data/)
+The full step-by-step documentation can be found on my blog [here](https://niaulans.tech/posts/etl-pipeline-project-nyc-taxi-data/)
 
 ### Visualization
 _Overall Taxi Data_
